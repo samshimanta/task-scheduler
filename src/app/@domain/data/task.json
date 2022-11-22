@@ -1,0 +1,26 @@
+{
+  "todos": [
+    {
+      "title": 1,
+      "description": "Do something nice for someone I care about",
+      "completed": true
+    },
+    {
+      "title": 2,
+      "description": "Memorize the fifty states and their capitals",
+      "completed": false
+    },
+    { "title": 3, "description": "Watch a classic movie", "completed": false },
+    {
+      "title": 4,
+      "description": "Contribute code or a monetary donation to an open-source software project",
+      "completed": false
+    },
+    { "title": 5, "description": "Solve a Rubik's cube", "completed": false },
+    {
+      "title": 6,
+      "description": "Bake pastries for me and neighbor",
+      "completed": false
+    }
+  ]
+}
