@@ -1,9 +1,10 @@
 
-    <mat-toolbar color="primary">
+       
+    <mat-toolbar color="accent">
         <span class="fill-remaining-space">Create New Task</span>
     </mat-toolbar>
     <div class="container" style="font-size: 1rem;">
-        <form [formGroup]="createTaskForm"  (ngSubmit)="formSubmit(createTaskForm)">
+        <form [formGroup]="createTaskForm"  (ngSubmit)="formSubmit()">
           
             <mat-form-field appearance="outline" class="form-element title">
                 <mat-label>Title</mat-label>
@@ -33,7 +34,10 @@
                 </mat-select>
             </mat-form-field>
 
-            <button mat-raised-button color="warn" type="submit" class="button" >Submit Form</button>
+            <button
+                
+                mat-raised-button color="accent" type="submit" class="button" >Submit Form
+            </button>
             
         </form>
     </div>

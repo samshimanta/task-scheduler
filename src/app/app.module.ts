@@ -15,6 +15,11 @@ import { TaskDetailsComponent } from './components/task-details/task-details.com
 import { CreateTaskComponent } from './components/create-task/create-task.component';
 import { CreateTaskModule } from './components/create-task/create-task.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SetTaskService } from './@domain/services/set-task.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ContentLayoutComponent } from './layout/content-layout/content-layout.component';
+import { EditTaskComponent } from './components/edit-task/edit-task.component';
+
 
 
 @NgModule({
@@ -25,18 +30,21 @@ import { ReactiveFormsModule } from '@angular/forms';
     TaskListComponent,
     TaskItemComponent,
     TaskDetailsComponent,
-    CreateTaskComponent
+    CreateTaskComponent,
+    ContentLayoutComponent,
+    EditTaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
    // ReactiveFormsModule,
 
     SharedModule,
     CreateTaskModule
   ],
-  providers: [],
+  providers: [SetTaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

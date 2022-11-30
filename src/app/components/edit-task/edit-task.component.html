@@ -1,0 +1,46 @@
+<!-- <p>edit-task works!</p> -->
+
+       
+<mat-toolbar color="accent">
+    <span class="fill-remaining-space">Edit Task</span>
+</mat-toolbar>
+<div class="container" style="font-size: 1rem;">
+    <form 
+    [formGroup]="editTaskForm"  (ngSubmit)="formSubmit()"
+    >
+      
+        <mat-form-field appearance="outline" class="form-element title">
+            <mat-label>Title</mat-label>
+            <input matInput formControlName="title">
+        </mat-form-field>
+      
+     
+        
+        <mat-form-field
+             
+            appearance="outline" class="form-element details">
+            <mat-label>Details</mat-label>
+            <textarea 
+                formControlName="details" 
+                matInput 
+                matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="5" 
+            >
+            </textarea>
+        </mat-form-field>
+        <mat-form-field
+            
+            appearance="outline" class="form-element option">
+            <mat-label>Select</mat-label>
+            <mat-select>
+            <mat-option value="one">Add to priority</mat-option>
+            <mat-option value="two">Add to task-list</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <button
+            
+            mat-raised-button color="accent" type="submit" class="button" >Submit Form
+        </button>
+        
+    </form>
+</div>

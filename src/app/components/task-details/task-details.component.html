@@ -8,7 +8,12 @@
                 
                 {{ item.details }}
             </p>
+            <p>
+                Created At: {{ item.createdAt }} 
+            </p>
         </mat-card-content>
+        <button (click)="deleteTask(item)" >delete</button>
+        <button  routerLink="/edit-task" (click)="editTask(item)">edit task</button>
         
         
     </mat-card>
