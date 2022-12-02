@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+<<<<<<< HEAD
 import {MatCardModule} from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
@@ -43,6 +44,15 @@ import { EditTaskComponent } from './components/edit-task/edit-task.component';
 
     SharedModule,
     CreateTaskModule
+=======
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+>>>>>>> parent of 15feeb8 (upload project)
   ],
   providers: [SetTaskService],
   bootstrap: [AppComponent]
